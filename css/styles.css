@@ -7,8 +7,8 @@ body {
 .calculator-frame {
     padding: 12px;
     background-color: antiquewhite;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 25px;
     box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
     border-radius: 12px;
