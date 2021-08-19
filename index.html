@@ -4,18 +4,21 @@
        <meta charset="utf-8" />
        <link rel="shortcut icon" type="image/x-icon" href="calculator.png" />
        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
        <link rel="stylesheet" href="css/styles.css">
    </head>
    <body>
        <div class="calculator-frame" align="center">
            <br />
-           <h4 align="center">Simple calculator with JavaScript</h4>
+           <h4 align="center">Simple calculator with JavaScript <br> (Responsive)</h4>
         <form name="calculator">
             <table>
                <tr>
                   <td colspan="4">
-                     <input type="text" name="display" id="display" disabled>
+                     <input class="display" type="text" name="display" id="display" disabled>
                   </td>
                   <br />
                </tr>
@@ -38,18 +41,21 @@
                 <td><p class="input" align="center" type="operator" name="times" value="*" onclick="calculator.display.value += '*'"> X </p></td>
                </tr>
                <tr>
-                  <td><p class="input" align="center" type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''">C</p></td>
+                  <td><p class="input bg-danger" align="center" type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''">CE</p></td>
                   <td><p class="input" align="center" type="button" name="zero" value="0" onclick="calculator.display.value += '0'">0</p></td>
-                  <td><p class="input" align="center" type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)">=</p></td>
+                  <td><p class="input bg-success" align="center" type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)">=</p></td>
                   <td><p class="input" align="center" type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'">/</p></td>
+               </tr>
+               <tr>
+                  <td><p class="input" align="center" type="button" class="operator" name="div" value="(" onclick="calculator.display.value += '('">(</p></td>
+                  <td><p class="input" align="center" type="button" class="operator" name="div" value=")" onclick="calculator.display.value += ')'">)</p></td>
                </tr>
             </table>
           </form>
           <hr />
          <p> Tips (ID) : Gunakan ** untuk pangkat/kuadrat , misal : 2**3 = 8</p>
          <p> Tips (EN) : Use ** for square/quadratic , example : 2**3 = 8</p>
-         <p><i>ID : Operasi pertambahan dan pengurangan bilangan bulat (bilangan negatif) sedikit error !</i></p>
-         <p><i>EN : The operation of addition and subtraction of integers (negative numbers) is a little error!</i></p>
+         <br>
          <p>Source : <a href="https://codeburst.io/making-a-calculator-with-basic-html-css-and-javascript-part-1-1e4288f0bea1">CodeBurst</a> </p>
          <p>Made by Arifian Saputra , <a href="https://arifian853.github.io/">Visit</a> , Github : <a href="https://github.com/arifian853">Visit</a> </p>
          <hr />
